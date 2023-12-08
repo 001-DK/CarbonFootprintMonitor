@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalCar_Tab"
+    android:background="#f6fdfb">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/personalCar_backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lgnbtn"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"/>
+            <TextView
+                android:id="@+id/mileageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mileage:"
+                android:layout_below="@+id/personalCar_backBtn"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="50dp"/>
+            <EditText
+                android:id="@+id/mileage"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Enter Mileage"
+                android:textColorHint="#607069"
+                android:layout_below="@id/mileageTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+
+            <Spinner
+                android:id="@+id/mileType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/mileageTxt"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/mileage"
+                android:background="@drawable/entrybox"
+                android:textColor="#607069" />
+
+            <TextView
+                android:id="@+id/yearTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year of Manufature:"
+                android:layout_below="@+id/mileage"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <NumberPicker
+                android:id="@+id/manufactureYear"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/entrybox"
+                android:layout_below="@id/yearTxt"
+                android:layout_marginTop="10dp"
+                android:textColor="#607069"
+                android:scrollbarSize="100dp"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/manufucturerTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Manufacturer:"
+                android:layout_below="@+id/manufactureYear"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <Spinner
+                android:id="@+id/manufacturerType"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/entrybox"
+                android:layout_below="@id/manufucturerTxt"
+                android:layout_marginStart="20dp"
+                android:textColor="#607069"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/modelTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Model:"
+                android:layout_below="@+id/manufacturerType"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/model"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="Enter Car Model i.e Harrier,TX"
+                android:textColorHint="#607069"
+                android:layout_below="@id/modelTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <TextView
+                android:id="@+id/consumptionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter consumption rate i.e. Ltr/100Km:"
+                android:layout_below="@+id/model"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/consumption"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Enter Consumption"
+                android:textColorHint="#607069"
+                android:layout_below="@id/consumptionTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <Spinner
+                android:id="@+id/consumptionType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/entrybox"
+                android:layout_below="@id/consumptionTxt"
+                android:layout_toRightOf="@id/mileage"
+                android:layout_marginStart="20dp"
+                android:textColor="#607069"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/personalResultTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PersonalCar Carbon Footprint :"
+                android:layout_below="@+id/consumption"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/personalCarResult"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="0.00 metric tons of CO2e"
+                android:textColorHint="#607069"
+                android:layout_below="@id/personalResultTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <android.widget.Button
+                android:id="@+id/carFootprintBtn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Calculate Carbon Footprint"
+                android:background="@drawable/lgnbtn"
+                android:backgroundTint="#337767"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="#f6fdfb"
+                android:layout_below="@id/personalCarResult"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

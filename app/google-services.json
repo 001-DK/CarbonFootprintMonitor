@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "110574205110",
+    "project_id": "carbon-footprint-monitor-3212d",
+    "storage_bucket": "carbon-footprint-monitor-3212d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110574205110:android:8fc86cdc675700082ace17",
+        "android_client_info": {
+          "package_name": "com.example.o2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPwEItZhv4hrFnkRc848AsgQWt-O9sZls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

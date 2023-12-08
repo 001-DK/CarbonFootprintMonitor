@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="#f6fdfb">
+
+    <ImageView
+        android:id="@+id/leafImg"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/leaf"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-50dp"/>
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back."
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:textColor="#607069"/>
+    <TextView
+        android:id="@+id/loginSub"
+        android:layout_below="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to your account."
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        android:textColor="#607069"/>
+    
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/loginSub"
+        android:layout_marginTop="40dp"
+        android:hint="Enter email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/entrybox"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/userEmail"
+        android:layout_marginTop="20dp"
+        android:hint="***********"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:background="@drawable/entrybox"
+        android:paddingStart="10dp"
+        android:drawablePadding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/forgotTxt"
+        android:layout_below="@id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="18sp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#607069"/>
+    <android.widget.Button
+        android:id="@+id/loginBtn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/lgnbtn"
+        android:backgroundTint="#337767"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#d1f7f2"
+        android:layout_below="@+id/forgotTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/lbl1Txt"
+        android:layout_below="@id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#607069"/>
+
+    <TextView
+        android:id="@+id/signTxt"
+        android:layout_below="@id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:layout_toRightOf="@+id/lbl1Txt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#607069"/>
+
+
+</RelativeLayout>

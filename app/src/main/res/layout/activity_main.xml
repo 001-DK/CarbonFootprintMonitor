@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/intro_background">
+
+    <ImageView
+        android:id="@+id/plants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plants"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_below="@+id/plants"
+        android:id="@+id/introTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        android:textColor="#e7eee8"
+        android:text="Embrace A Greener\nTomorrow"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        />
+    <TextView
+        android:layout_below="@+id/introTitle"
+        android:id="@+id/introSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="#e7eee8"
+        android:text="Track your carbon footprint\nand gain insights into your environmental contributions."
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+    <android.widget.Button
+        android:id="@+id/startBtn"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/introSub"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#5c8a6e"
+        android:textSize="24sp"
+        android:layout_marginTop="70dp"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:background="@drawable/lgnbtn"
+        android:elevation="20dp"/>
+</RelativeLayout>

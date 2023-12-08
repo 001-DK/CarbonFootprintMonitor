@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessCreateAccount"
+    android:background="#f6fdfb">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lgnbtn"
+                android:id="@+id/back3"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:elevation="10dp"/>
+
+            <TextView
+                android:layout_below="@+id/back3"
+                android:id="@+id/createTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back."
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#607069"/>
+            <TextView
+                android:id="@+id/createSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your busines account."
+                android:layout_below="@+id/createTitle"
+                android:textSize="28sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="#607069"/>
+            <EditText
+                android:id="@+id/bName"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="text"
+                android:layout_below="@+id/createSub"
+                android:layout_marginTop="40dp"
+                android:hint="Full Business Name"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_business_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/bEmail"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/bName"
+                android:layout_marginTop="20dp"
+                android:hint="downjoe@gmail.com"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+            <EditText
+                android:id="@+id/bCounty"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="text"
+                android:layout_below="@+id/bEmail"
+                android:layout_marginTop="20dp"
+                android:hint="Enter County"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/bCity"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="text"
+                android:layout_below="@+id/bCounty"
+                android:layout_marginTop="20dp"
+                android:hint="Enter City"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+            <EditText
+                android:id="@+id/bPhone"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:layout_below="@+id/bCity"
+                android:layout_marginTop="20dp"
+                android:hint="Business Phone Number"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+            <EditText
+                android:id="@+id/bPass"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/bPhone"
+                android:layout_marginTop="20dp"
+                android:hint="Create Password"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+            <EditText
+                android:id="@+id/bcPass"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/bPass"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm Password"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/entrybox"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"/>
+            <android.widget.Button
+                android:id="@+id/createBtn"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lgnbtn"
+                android:backgroundTint="#337767"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#d1f7f2"
+                android:layout_below="@+id/bcPass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:elevation="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

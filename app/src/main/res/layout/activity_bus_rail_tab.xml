@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusRail_Tab"
+    android:background="#f6fdfb">
+    <ImageButton
+        android:id="@+id/bus_rail_backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lgnbtn"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bus_rail_backBtn">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/busTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus:"
+                android:layout_marginStart="30dp"
+                android:textSize="22sp"
+                android:textColor="#607069"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/busDistance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Distance with bus"
+                android:textColorHint="#607069"
+                android:layout_below="@id/busTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <Spinner
+                android:id="@+id/bus_DistanceType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/busTxt"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/busDistance"
+                android:background="@drawable/entrybox"
+                android:textColor="#607069" />
+            <TextView
+                android:id="@+id/coachTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coach:"
+                android:layout_below="@+id/busDistance"
+                android:layout_marginStart="30dp"
+                android:textSize="22sp"
+                android:textColor="#607069"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/coachDistance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Distance with coach"
+                android:textColorHint="#607069"
+                android:layout_below="@id/coachTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <Spinner
+                android:id="@+id/coachDistanceType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/coachTxt"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/busDistance"
+                android:background="@drawable/entrybox"
+                android:textColor="#607069" />
+            <TextView
+                android:id="@+id/sgrTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SGR:"
+                android:layout_below="@+id/coachDistance"
+                android:layout_marginStart="30dp"
+                android:textSize="22sp"
+                android:textColor="#607069"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/sgrDistance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Distance with SGR"
+                android:textColorHint="#607069"
+                android:layout_below="@id/sgrTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <Spinner
+                android:id="@+id/sgrDistanceType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/sgrTxt"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/busDistance"
+                android:background="@drawable/entrybox"
+                android:textColor="#607069" />
+            <TextView
+                android:id="@+id/cabTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxi / Cab:"
+                android:layout_below="@+id/sgrDistance"
+                android:layout_marginStart="30dp"
+                android:textSize="22sp"
+                android:textColor="#607069"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/cabDistance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:hint="Distance with taxi/cab"
+                android:textColorHint="#607069"
+                android:layout_below="@id/cabTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <Spinner
+                android:id="@+id/cabDistanceType"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/cabTxt"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/busDistance"
+                android:background="@drawable/entrybox"
+                android:textColor="#607069" />
+            <TextView
+                android:id="@+id/busResultTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PersonalCar Carbon Footprint :"
+                android:layout_below="@+id/cabDistance"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/bus_RailResult"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="0.00 metric tons of CO2e"
+                android:textColorHint="#607069"
+                android:layout_below="@id/busResultTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+
+            <android.widget.Button
+                android:id="@+id/bus_railFootprintBtn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Calculate Carbon Footprint"
+                android:background="@drawable/lgnbtn"
+                android:backgroundTint="#337767"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="#f6fdfb"
+                android:layout_below="@id/bus_RailResult"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountType"
+    android:background="#ecf0ee">
+
+    <ImageButton
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lgnbtn"
+        android:id="@+id/back2"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_below="@+id/back2"
+        android:id="@+id/typeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#607069"/>
+    <TextView
+        android:layout_below="@+id/typeTitle"
+        android:id="@+id/typeSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="What account type\n do you want to create "
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#607069"/>
+    <android.widget.Button
+        android:id="@+id/personalBtn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/lgnbtn"
+        android:backgroundTint="#337767"
+        android:text="Personal"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#d1f7f2"
+        android:layout_below="@+id/typeSub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"/>
+    <android.widget.Button
+        android:id="@+id/businessBtn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/lgnbtn"
+        android:backgroundTint="#337767"
+        android:text="Business"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#d1f7f2"
+        android:layout_below="@+id/personalBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"/>
+
+
+</RelativeLayout>

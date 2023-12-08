@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flights_tab"
+    android:background="#f6fdfb">
+    <ImageButton
+        android:id="@+id/flights_backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lgnbtn"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/flights_backBtn"
+        android:src="@drawable/takeoff"
+        android:layout_marginStart="180dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/flights_backBtn">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/flight_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/returnRbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return trip"
+                    android:paddingEnd="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#607069"
+                    android:textStyle="bold"
+                    android:backgroundTint="#337767"
+                    />
+                <RadioButton
+                    android:id="@+id/onewayRbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One-way Flight"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#607069"
+                    android:backgroundTint="#337767"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/fromTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From:"
+                android:layout_below="@+id/flight_type"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/from"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="Leaving From"
+                android:textColorHint="#607069"
+                android:layout_below="@id/fromTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <TextView
+                android:id="@+id/toTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To:"
+                android:layout_below="@+id/from"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/to"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="Destination"
+                android:textColorHint="#607069"
+                android:layout_below="@id/toTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <TextView
+                android:id="@+id/classTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class:"
+                android:layout_below="@+id/to"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <Spinner
+                android:id="@+id/classType"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/entrybox"
+                android:layout_below="@id/classTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tripsNoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Trips:"
+                android:layout_below="@+id/classType"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/tripsNo"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="Enter number of trips taken"
+                android:textColorHint="#607069"
+                android:layout_below="@id/tripsNoTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <TextView
+                android:id="@+id/resultTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbon Footprint Calculation:"
+                android:layout_below="@+id/tripsNo"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="#607069"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/result"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="0.00 metric tons of CO2e"
+                android:textColorHint="#607069"
+                android:layout_below="@id/resultTxt"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/entrybox"
+                android:paddingStart="10dp"/>
+            <android.widget.Button
+                android:id="@+id/flightEmissionBtn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Calculate Carbon Footprint"
+                android:background="@drawable/lgnbtn"
+                android:backgroundTint="#337767"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="#f6fdfb"
+                android:layout_below="@id/result"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

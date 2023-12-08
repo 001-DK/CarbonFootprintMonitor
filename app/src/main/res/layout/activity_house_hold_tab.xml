@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseHold_Tab"
+    android:background="#f6fdfb">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6fdfb">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f6fdfb">
+
+            <ImageButton
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lgnbtn"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:id="@+id/houseBackBtn"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_below="@+id/houseBackBtn"
+        android:id="@+id/house_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the below fields\n\t\t\t\t\tbased on amount spent on the items."
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#607069"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/electricityLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Electricity"
+        android:layout_below="@id/house_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/electricityBill"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/house_title"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+    <TextView
+        android:id="@+id/cookingGas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Cooking Gas"
+        android:layout_below="@id/electricityLbl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/cookingGasAmt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/electricityBill"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+
+    <TextView
+        android:id="@+id/cookingOil"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Heating Oil"
+        android:layout_below="@id/cookingGas"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/heatingOilAmt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/cookingGasAmt"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+
+    <TextView
+        android:id="@+id/propane"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Propane"
+        android:gravity="center"
+        android:layout_below="@id/cookingOil"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/propaneAmt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/heatingOilAmt"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+
+    <TextView
+        android:id="@+id/woodenPallet"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Wooden Pallet"
+        android:layout_below="@id/propane"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/woodenPalletAmt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/propaneAmt"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+    <TextView
+        android:id="@+id/lpg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="LPG"
+        android:layout_below="@id/woodenPallet"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/lpgAmt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="Ksh"
+        android:layout_marginStart="55dp"
+        android:layout_below="@id/woodenPalletAmt"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/electricityLbl"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/entrybox"/>
+
+    <android.widget.Button
+        android:id="@+id/houseHoldBtn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/lgnbtn"
+        android:backgroundTint="#337767"
+        android:text="Calculate HouseHold Emission"
+        android:textColor="#d1f7f2"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@id/lpg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/houseEmission"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/houseHoldBtn"
+        android:background="@drawable/entrybox"
+        android:hint="Your HouseHold Emission in MetricTones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
